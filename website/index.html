@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vonartis Foundation</title>
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font family -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .text-vonartis { color: #6366f1; /* Indigo-500 */ }
+        .bg-vonartis { background-color: #4f46e5; /* Indigo-600 */ }
+        /* Keyframe for subtle flow animation on the hero graphic */
+        @keyframes flow {
+            0% { transform: translate(0, 0); opacity: 0.5; }
+            50% { transform: translate(20px, 0); opacity: 0.8; }
+            100% { transform: translate(0, 0); opacity: 0.5; }
+        }
+        .animate-flow {
+            animation: flow 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo: Stylized Node Network for IP/Foundation -->
+                <a href="#home" class="flex items-center space-x-2">
+                    <svg class="h-8 w-8 text-vonartis" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Abstract Node/IP Icon -->
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                        <path d="M2 17l10 5 10-5"></path>
+                        <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="text-2xl font-bold tracking-tight text-white">Vonartis<span class="text-vonartis">.</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="text-gray-300 hover:text-vonartis transition duration-300">Home</a>
+                    <a href="#mission" class="text-gray-300 hover:text-vonartis transition duration-300">Mission</a>
+                    <a href="#technology" class="text-gray-300 hover:text-vonartis transition duration-300">Technology</a>
+                    <a href="#intelligence" class="text-gray-300 hover:text-vonartis transition duration-300">Intelligence</a>
+                    <a href="#portfolio" class="text-gray-300 hover:text-vonartis transition duration-300">Portfolio</a>
+                </div>
+
+                <!-- Contact Button -->
+                <a href="#contact" class="hidden md:block bg-vonartis hover:bg-indigo-700 text-white font-semibold py-2 px-4 rounded-full transition duration-300 shadow-lg">
+                    Contact Us
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="relative overflow-hidden pt-20 pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="md:grid md:grid-cols-12 md:gap-8 lg:gap-12 items-center">
+                    <div class="col-span-12 lg:col-span-7">
+                        <span class="text-vonartis text-lg font-semibold uppercase tracking-wider mb-4 block">The Vonartis Foundation | Zurich</span>
+                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white mb-6">
+                            Architecting a <span class="text-vonartis">Decentralized</span> Future.
+                        </h1>
+                        <p class="text-xl text-gray-400 mb-8">
+                            The Vonartis Foundation holds the Intellectual Property for The Vonartis Group, developing core decentralized Blockchain technology across three fundamental layers of the tokenized economy.
+                        </p>
+                        <div class="flex space-x-4">
+                            <a href="#technology" class="bg-vonartis hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 shadow-xl shadow-indigo-500/30">
+                                Explore Technology
+                            </a>
+                            <a href="#mission" class="border border-gray-600 text-gray-300 hover:border-vonartis hover:text-vonartis font-semibold py-3 px-8 rounded-full transition duration-300">
+                                Our Vision
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Hero Graphic -->
+                    <div class="col-span-12 lg:col-span-5 mt-12 lg:mt-0 hidden md:block">
+                        <div class="rounded-3xl shadow-2xl shadow-indigo-900/50 overflow-hidden">
+                            <img src="assets/images/hero-graphic.png" alt="Vonartis Decentralized Technology" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission/Values Section (No change needed) -->
+        <section id="mission" class="py-24 bg-gray-800/50">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-extrabold text-white mb-6">Our Foundational Belief</h2>
+                <div class="p-8 md:p-12 bg-gray-900 border border-indigo-700/50 rounded-2xl shadow-xl">
+                    <p class="text-3xl italic text-gray-200 leading-relaxed max-w-4xl mx-auto">
+                        "We believe in a fairer society based on human values, where knowledge is as valuable as wealth and should benefit everyone, not just the few."
+                    </p>
+                </div>
+                <p class="mt-8 text-lg text-gray-400 max-w-3xl mx-auto">
+                    This philosophy drives The Vonartis Group's commitment to building open, transparent, and equitable decentralized systems that empower global participation.
+                </p>
+            </div>
+        </section>
+
+        <!-- Technology Pillars Section (No change needed) -->
+        <section id="technology" class="py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-white text-center mb-4">Three Levels of Decentralization</h2>
+                <p class="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
+                    The Vonartis Group develops core technology across the entire decentralized stack.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Pillar 1: Applications -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-indigo-900/40 transition duration-500 border border-gray-700 hover:border-vonartis">
+                        <div class="text-vonartis mb-4">
+                            <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-4 4V7a4 4 0 014-4h14a4 4 0 014 4v14a4 4 0 01-4 4H9.75a4 4 0 01-4-4V7M12 18V6"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">1. Applications (Web3.0)</h3>
+                        <p class="text-gray-400">
+                            Building decentralized applications (DApps) and user-facing solutions for Web3.0. Our focus is on seamless application layer communication and creating intuitive user experiences on the blockchain.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 2: Infrastructure -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-indigo-900/40 transition duration-500 border border-gray-700 hover:border-vonartis">
+                        <div class="text-vonartis mb-4">
+                            <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 0v10M12 12v6"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">2. Infrastructure & Protocols</h3>
+                        <p class="text-gray-400">
+                            Developing robust protocols that monitor, decipher, and interpret complex Smart Contract information, ensuring reliable and secure data exchange across different blockchain environments.
+                        </p>
+                    </div>
+
+                    <!-- Pillar 3: Hardware -->
+                    <div class="bg-gray-800 p-8 rounded-xl shadow-2xl hover:shadow-indigo-900/40 transition duration-500 border border-gray-700 hover:border-vonartis">
+                        <div class="text-vonartis mb-4">
+                            <svg class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V8a2 2 0 012-2h14a2 2 0 012 2v2a2 2 0 01-2 2M5 12a2 2 0 00-2 2v2a2 2 0 002 2h14a2 2 0 002-2v-2a2 2 0 00-2-2m-2-4h-4M10 20h4"/></svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-3">3. Secure Hardware Solutions</h3>
+                        <p class="text-gray-400">
+                            Creating specialized hardware that underpins the network's security and efficiency, ensuring data integrity and sovereign ownership of digital assets in the decentralized ecosystem.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blockchain Intelligence Technology Feature Section (No change needed) -->
+        <section id="intelligence" class="py-24 bg-gray-900">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="md:grid md:grid-cols-12 md:gap-12 items-center">
+                    <div class="col-span-12 lg:col-span-6 order-2 lg:order-1">
+                        <h2 class="text-4xl font-extrabold text-white mb-4">
+                            Pioneering <span class="text-vonartis">ZK Proofs</span><br>
+                            For <span class="text-vonartis">Beneficial Ownership</span>
+                        </h2>
+                        <p class="text-xl text-gray-400 mb-8">
+                            We have engineered the first-of-its-kind solution that merges compliance with the tokenized economy, establishing new standards for transparency and accountability.
+                        </p>
+
+                        <ul class="space-y-6">
+                            <li class="flex items-start space-x-3">
+                                <svg class="mt-1 h-6 w-6 text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.24a3.5 3.5 0 00-4.95-4.95L5.05 10.51a1.5 1.5 0 00-.5 1.06v5.5a1.5 1.5 0 001.5 1.5h5.5a1.5 1.5 0 001.06-.5l9.9-9.9a3.5 3.5 0 000-4.95z"/></svg>
+                                <div>
+                                    <span class="font-bold text-white">AML/KYC for Blockchain Compliance:</span>
+                                    <p class="text-gray-400 text-sm">Continuous high volume verifications for tokenized funds under CTA / MiCA scrutiny.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="mt-1 h-6 w-6 text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                                <div>
+                                    <span class="font-bold text-white">Compliance Railroad for Tokenized Economy:</span>
+                                    <p class="text-gray-400 text-sm">$10T is moving on-chain in RWAs. We built the standard.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start space-x-3">
+                                <svg class="mt-1 h-6 w-6 text-indigo-400 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2-1.343-2-3-2zM12 21c-4.97 0-9-2.9-9-6.5S7.03 8 12 8s9 2.9 9 6.5-4.03 6.5-9 6.5zM12 12V3"/></svg>
+                                <div>
+                                    <span class="font-bold text-white">Auto Generate FinCEN Reports:</span>
+                                    <p class="text-gray-400 text-sm">Suspicious Activity Reports (SAR) & Currency Transaction Reports (CTR).</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Intelligence Graphic -->
+                    <div class="col-span-12 lg:col-span-6 mt-12 lg:mt-0 order-1 lg:order-2 flex justify-center">
+                        <div class="rounded-xl shadow-2xl shadow-indigo-900/50 overflow-hidden">
+                            <img src="assets/images/intelligence-graphic.png" alt="Blockchain Intelligence Technology" class="w-full h-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Showcase Section (Updated with details and links) -->
+        <section id="portfolio" class="py-24 bg-gray-800/50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-extrabold text-white text-center mb-4">Our Portfolio Companies</h2>
+                <p class="text-xl text-gray-400 text-center mb-16 max-w-3xl mx-auto">
+                    Innovations from The Vonartis Group, building value across the decentralized landscape.
+                </p>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1: Smart Crypto Wallet -->
+                    <a href="https://www.vonpay.app" target="_blank" class="block bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300 shadow-xl group relative">
+                        <img src="assets/images/von-pay.png" alt="VonPay Logo" class="absolute top-4 right-8 h-16 w-auto">
+                        <h3 class="text-xl font-bold text-vonartis mb-2 group-hover:text-indigo-400 transition duration-300">Smart Crypto Wallet</h3>
+                        <p class="text-lg text-white mb-3">Application Layer</p>
+                        <p class="text-gray-400">A next generation smart crypto wallet (EIP-7702 Standard). AI powered insights giving you market trends, trading signals and portfolio analytics, all inside the App. TON wallet compatible.</p>
+                        <span class="mt-4 inline-block text-sm font-semibold text-gray-500 group-hover:text-indigo-600 transition duration-300">Learn More &rarr;</span>
+                    </a>
+
+                    <!-- Portfolio Item 2: Infrastructure/Protocol -->
+                    <a href="assets/docs/dyva-whitepaper.pdf" target="_blank" class="block bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300 shadow-xl group relative">
+                        <img src="assets/images/dyva-logo.png" alt="DYVA Logo" class="absolute top-4 right-8 h-16 w-auto">
+                        <h3 class="text-xl font-bold text-vonartis mb-2 group-hover:text-indigo-400 transition duration-300">DYVA Protocol</h3>
+                        <p class="text-lg text-white mb-3">Infrastructure Layer</p>
+                        <p class="text-gray-400">Dynamic Validator is a lightweight communications protocol that acts as an orchestrator for DePIN Networks. It creates a unified, permissionless on-chain messaging system and therefore a censorship resistant platform.</p>
+                        <span class="mt-4 inline-block text-sm font-semibold text-gray-500 group-hover:text-indigo-600 transition duration-300">Download Whitepaper &rarr;</span>
+                    </a>
+
+                    <!-- Portfolio Item 3: DePIN Infrastructure -->
+                    <a href="https://www.vonaio.com" target="_blank" class="block bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300 shadow-xl group relative">
+                        <img src="assets/images/vonaio-logo.png" alt="VonAIO Logo" class="absolute top-4 right-8 h-16 w-auto">
+                        <h3 class="text-xl font-bold text-vonartis mb-2 group-hover:text-indigo-400 transition duration-300">Node Core DePIN</h3>
+                        <p class="text-lg text-white mb-3">Hardware Layer</p>
+                        <p class="text-gray-400">Decentralized Physical Infrastructure Network, comprising of 105 nodes in 5 Tier 1 data centers in London, Dubai, Frankfurt, Tokyo and New York. Along with our NOC in Cyprus and Data Storage site in Zurich, we cover the globe from 7 locations.</p>
+                        <span class="mt-4 inline-block text-sm font-semibold text-gray-500 group-hover:text-indigo-600 transition duration-300">Learn More &rarr;</span>
+                    </a>
+
+                    <!-- Portfolio Item 4: Intelligence/Compliance -->
+                    <a href="assets/docs/vbitzk-whitepaper.pdf" target="_blank" class="block bg-gray-900 p-6 rounded-xl border border-gray-700 hover:border-indigo-500 transition duration-300 shadow-xl lg:col-span-full lg:mx-auto lg:w-2/3 group relative">
+                        <img src="assets/images/vbitzk-logo.png" alt="vBitZK Logo" class="absolute top-4 right-8 h-10 w-auto">
+                        <h3 class="text-xl font-bold text-indigo-400 mb-2 group-hover:text-white transition duration-300">VonBit AI</h3>
+                        <p class="text-lg text-white mb-3">Intelligence & Compliance Solution</p>
+                        <p class="text-gray-400">Our flagship intelligence engine for regulatory compliance. It offers granular tracing of beneficial ownership (AML/KYC) and tracks wealth flows across global digital liquidity pools and wrapped tokens in order to establish new transparency standards.</p>
+                        <span class="mt-4 inline-block text-sm font-semibold text-gray-500 group-hover:text-indigo-600 transition duration-300">Download Whitepaper &rarr;</span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Contact (No change needed) -->
+        <section id="contact" class="py-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center bg-gray-800/70 p-12 rounded-2xl shadow-2xl shadow-indigo-900/50 border border-indigo-700/50">
+                <h2 class="text-4xl font-extrabold text-white mb-4">Partner with the Foundation</h2>
+                <p class="text-xl text-gray-400 mb-8 max-w-3xl mx-auto">
+                    Located in Zurich, The Vonartis Foundation is strategically positioned at the nexus of global finance and decentralized technology. Contact us to discuss IP licensing or strategic partnerships.
+                </p>
+                <a href="mailto:info@vonartis.com" class="bg-vonartis hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full text-lg transition duration-300 shadow-lg shadow-indigo-500/40">
+                    Get in Touch
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer (No change needed) -->
+    <footer class="bg-gray-900 border-t border-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-500 text-sm">
+                    &copy; 2025 The Vonartis Foundation. All rights reserved.
+                </p>
+                <div class="flex space-x-6">
+                    <span class="text-gray-500 text-sm">Headquarters: Zurich, Switzerland</span>
+                    <a href="#" class="text-gray-500 hover:text-vonartis text-sm">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
